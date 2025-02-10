@@ -15,11 +15,7 @@ const express = require('express');
        })
    );
 
-   // Configuração do servidor HTTPS
-   const options = {
-       key: fs.readFileSync('caminho/para/sua-chave-privada.key'), // Substitua pelo caminho da sua chave privada
-       cert: fs.readFileSync('caminho/para/seu-certificado.crt'), // Substitua pelo caminho do seu certificado
-   };
+   
 
    // Inicia o servidor HTTPS na porta 443
    https.createServer( app).listen(443, () => {
